@@ -1,0 +1,16 @@
+[package]
+name = "pacman-repo-builder"
+version = "0.0.0"
+edition = "2021"
+
+[lib]
+name = "pacman_repo_builder"
+path = "src/lib.rs"
+
+[[bin]]
+name = "build-pacman-repo"
+path = "cli/build_pacman_repo.rs"
+
+[dependencies]
+arch-pkg-db = "0.0.0"
+arch-pkg-text = "0.9.5"
