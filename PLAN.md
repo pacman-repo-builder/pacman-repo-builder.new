@@ -5,6 +5,7 @@
 * Fetch PKGBUILDs from the AUR.
 * Customizing AUR repo URLs with `lazy-template`.
 * Build pacman repositories from within Linux containers.
+* The manifest should be in the HJSON format.
 
 ## Tasks before completion
 
