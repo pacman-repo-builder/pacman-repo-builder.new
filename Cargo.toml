@@ -14,3 +14,4 @@ path = "cli/build_pacman_repo.rs"
 [dependencies]
 arch-pkg-db = "0.0.0"
 arch-pkg-text = "0.9.5"
+lazy-template = "0.1.0"
