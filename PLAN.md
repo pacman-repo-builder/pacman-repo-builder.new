@@ -11,3 +11,4 @@
 * [ ] Clean up `check-all.bash`.
 * [ ] Re-examine `Cargo.toml`.
 * [ ] Create `README.md`.
+* [ ] Delete this file.
