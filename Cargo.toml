@@ -14,4 +14,8 @@ path = "cli/build_pacman_repo.rs"
 [dependencies]
 arch-pkg-db = "0.0.0"
 arch-pkg-text = "0.9.5"
+derive_more = { version = "2.1.0", features = ["as_ref", "deref", "display", "error", "into"] }
 lazy-template = "0.1.0"
+pipe-trait = "0.4.0"
+serde = { version = "1.0.228", features = ["derive"] }
+serde-hjson = "1.1.0"
