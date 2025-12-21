@@ -437,6 +437,7 @@ dependencies = [
  "pipe-trait",
  "serde",
  "serde-hjson",
+ "split-first-char",
 ]
 
 [[package]]
@@ -664,6 +665,12 @@ name = "split-char-from-str"
 version = "0.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7736b73d12e0e2179ce3903b2599a3f33f195090eccf0326161e9013beae4fb7"
+
+[[package]]
+name = "split-first-char"
+version = "2.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8e9997ca938c186fe85387bedd38c54522f1800d7707b14ed4b8516a384c2c05"
 
 [[package]]
 name = "strum"

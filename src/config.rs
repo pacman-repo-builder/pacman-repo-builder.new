@@ -1,6 +1,8 @@
 pub mod file_base_name;
+pub mod repo_name;
 
 pub use file_base_name::FileBaseName;
+pub use repo_name::RepoName;
 
 use serde::{Deserialize, Serialize};
 
@@ -32,4 +34,12 @@ pub struct Config {
     ///
     /// The path is relative to the configuration file.
     pub container_dir: Option<String>,
+
+    /// Directory to store all the built pacman package archives.
+    ///
+    /// The path is relative to the configuration file.
+    pub package_dir: Option<String>,
+
+    /// Name of the repository of the built pacman packages.
+    pub repo_name: RepoName,
 }
