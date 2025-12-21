@@ -18,17 +18,16 @@ pub enum ValidateError {
 
 impl FileBaseName {
     /// Try converting a string into a base name.
-    pub fn try_from_string(base_name: String) -> Result<Self, ValidateError> {
-        FileBaseName::validate(&base_name)?;
-        Ok(FileBaseName(base_name))
+    pub fn try_from_string(name: String) -> Result<Self, ValidateError> {
+        FileBaseName::validate(&name)?;
+        Ok(FileBaseName(name))
     }
 
-    /// Validate whether a base name really is a base name.
-    pub fn validate(base_name: &str) -> Result<(), ValidateError> {
-        base_name
-            .pipe_as_ref(Path::file_name)
+    /// Validate whether a name really is a base name.
+    pub fn validate(name: &str) -> Result<(), ValidateError> {
+        name.pipe_as_ref(Path::file_name)
             .ok_or(ValidateError::NotAName)?
-            .eq(&base_name.as_ref())
+            .eq(&name.as_ref())
             .then_some(())
             .ok_or(ValidateError::NotAName)
     }
