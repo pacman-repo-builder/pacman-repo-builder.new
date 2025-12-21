@@ -22,4 +22,14 @@ pub struct Config {
     ///
     /// Examples: `Dockerfile`, `Containerfile`.
     pub container_file: FileBaseName,
+
+    /// Directory to store all the repositories that contain PKGBUILD and .SRCINFO.
+    ///
+    /// The path is relative to the configuration file.
+    pub pkgbuild_dir: Option<String>,
+
+    /// Directory to store all the directories to build container images in.
+    ///
+    /// The path is relative to the configuration file.
+    pub container_dir: Option<String>,
 }
