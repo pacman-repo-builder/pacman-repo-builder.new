@@ -19,9 +19,8 @@ pub enum ValidateError {
 impl FileBaseName {
     /// Try converting a string into a base name.
     pub fn try_from_string(base_name: String) -> Result<Self, ValidateError> {
-        base_name
-            .pipe_as_ref(FileBaseName::validate)
-            .map(|()| FileBaseName(base_name))
+        FileBaseName::validate(&base_name)?;
+        Ok(FileBaseName(base_name))
     }
 
     /// Validate whether a base name really is a base name.
