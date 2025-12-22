@@ -20,7 +20,7 @@ pub struct LocalPkgBuildDesc {
     /// Name(s) and base of the packages being built by the PKGBUILD.
     #[serde(flatten)]
     pub package: PkgBuildName,
-    /// Location of the directory, relative to the configuration file.
+    /// Location of the directory, relative to the manifest file.
     pub dir: String,
 }
 

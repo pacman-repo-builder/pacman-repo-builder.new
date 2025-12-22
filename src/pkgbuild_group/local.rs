@@ -22,7 +22,7 @@ pub struct LocalPkgBuildGroup {
 #[non_exhaustive]
 #[serde(rename_all = "kebab-case", deny_unknown_fields)]
 pub struct LocalPkgBuildHeader {
-    /// Shared template of local directory paths, relative to the configuration file.
+    /// Shared template of local directory paths, relative to the manifest file.
     pub dir_path_template: String,
 }
 

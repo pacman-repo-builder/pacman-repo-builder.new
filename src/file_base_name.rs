@@ -3,7 +3,7 @@ use pipe_trait::Pipe;
 use serde::{Deserialize, Serialize};
 use std::path::Path;
 
-/// Base name of a path to be used in a configuration file.
+/// Base name of a path to be used in a manifest file.
 #[derive(Debug, Display, Clone, Into, AsRef, Deref, Deserialize, Serialize)]
 #[serde(try_from = "String", into = "String")]
 pub struct FileBaseName(String);
