@@ -8,7 +8,7 @@ use serde::{Deserialize, Serialize};
 pub struct Manifest {
     /// The name of or path to the CLI program to build images and run containers.
     ///
-    /// This program reads from a [manifest file](Manifest::container_file).
+    /// This program reads from a [container file](Manifest::container_file).
     ///
     /// Examples: `docker`, `podman`.
     pub container_manager: String,
