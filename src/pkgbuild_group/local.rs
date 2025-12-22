@@ -1,4 +1,7 @@
-use crate::config::{pkgbuild_desc::LocalPkgBuildDesc, PkgBuildDesc, PkgBuildName};
+use crate::{
+    pkgbuild_desc::{LocalPkgBuildDesc, PkgBuildDesc},
+    pkgbuild_name::PkgBuildName,
+};
 use pipe_trait::Pipe;
 use serde::{Deserialize, Serialize};
 

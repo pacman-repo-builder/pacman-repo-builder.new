@@ -1,4 +1,4 @@
-use super::PkgBuildName;
+use crate::pkgbuild_name::PkgBuildName;
 use serde::{Deserialize, Serialize};
 
 /// Description of a single PKGBUILD directory.

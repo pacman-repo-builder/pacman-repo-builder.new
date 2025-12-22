@@ -1,15 +1,4 @@
-pub mod file_base_name;
-pub mod pkgbuild_desc;
-pub mod pkgbuild_group;
-pub mod pkgbuild_name;
-pub mod repo_name;
-
-pub use file_base_name::FileBaseName;
-pub use pkgbuild_desc::PkgBuildDesc;
-pub use pkgbuild_group::PkgBuildGroup;
-pub use pkgbuild_name::PkgBuildName;
-pub use repo_name::RepoName;
-
+use crate::{file_base_name::FileBaseName, pkgbuild_group::PkgBuildGroup, repo_name::RepoName};
 use serde::{Deserialize, Serialize};
 
 /// Data stored in a configuration file.

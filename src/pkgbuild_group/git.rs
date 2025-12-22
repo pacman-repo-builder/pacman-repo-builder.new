@@ -1,4 +1,7 @@
-use crate::config::{pkgbuild_desc::GitPkgBuildDesc, PkgBuildDesc, PkgBuildName};
+use crate::{
+    pkgbuild_desc::{GitPkgBuildDesc, PkgBuildDesc},
+    pkgbuild_name::PkgBuildName,
+};
 use pipe_trait::Pipe;
 use serde::{Deserialize, Serialize};
 

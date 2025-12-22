@@ -4,7 +4,7 @@ pub mod local;
 pub use git::GitPkgBuildGroup;
 pub use local::LocalPkgBuildGroup;
 
-use super::PkgBuildDesc;
+use crate::pkgbuild_desc::PkgBuildDesc;
 use serde::{Deserialize, Serialize};
 
 /// Grouping of multiple PKGBUILD directories with similar properties.
