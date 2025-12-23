@@ -5,6 +5,7 @@ pub mod pkgbuild_desc;
 pub mod pkgbuild_group;
 pub mod pkgbuild_name;
 pub mod repo_name;
+pub mod template;
 
 pub mod misc {
     pub use serde;
